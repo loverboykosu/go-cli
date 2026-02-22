@@ -13,7 +13,7 @@ fi
 
 OS=$(uname -s)
 ARCH=$(uname -m)
-URL="https://github.com/loverboykosu/go-cli/releases/download/${VERSION}/go-cli_${OS}_${ARCH}.tar.gz"
+URL="https://github.com/loverboykosu/go-cli/releases/download/${VERSION}/go-cli_Darwin_${ARCH}.tar.gz"
 
 echo "Start to install. VERSION=$VERSION, OS=$OS, ARCH=$ARCH"
 echo "Download URL=$URL"
