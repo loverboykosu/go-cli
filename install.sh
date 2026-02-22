@@ -2,7 +2,7 @@
 
 # If no version is specified as a command line argument, fetch the latest version.
 if [ -z "$1" ]; then
-    VERSION=$(curl -s https://api.github.com/repos/<GITHUB_USER_NAME>/<GITHUB_REPO_NAME>/releases/latest | grep -o '"tag_name": *"[^"]*"' | sed 's/"tag_name": *"//' | sed 's/"//')
+    VERSION=$(curl -s https://api.github.com/repos/loverboykosu/go-cli/releases/latest | grep -o '"tag_name": *"[^"]*"' | sed 's/"tag_name": *"//' | sed 's/"//')
     if [ -z "$VERSION" ]; then
         echo "Failed to fetch the latest version"
         exit 1
